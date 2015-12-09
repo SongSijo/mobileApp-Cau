@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8c8c8">
+
+   <!-- NOT SO IMPORTANT CUSTOM UI STUFF -->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/record_start"
+        android:background="@android:color/transparent"
+        android:src="@drawable/record"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◎ 버튼을 클릭해서 '안녕하세요'을 녹음하세요. "
+        android:id="@+id/ready_text"
+        android:layout_alignTop="@+id/record_start"
+        android:layout_marginLeft="120dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◎ 녹음이 끝나면 버튼을 한번 더 눌러주세요."
+        android:id="@+id/record_text"
+        android:layout_alignBottom="@+id/record_start"
+        android:layout_marginLeft="120dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/record_start"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/prize_1"
+                android:src="@drawable/prize_1" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/prize_2"
+                android:src="@drawable/prize_2"
+                android:layout_marginTop="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/first"
+                android:src="@drawable/empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/first_text" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/second"
+                android:src="@drawable/empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/second_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
